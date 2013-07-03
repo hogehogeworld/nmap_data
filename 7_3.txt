@@ -1,0 +1,424 @@
+
+Starting Nmap 6.25 ( http://nmap.org ) at 2013-07-01 19:18 EDT
+NSE: Loaded 433 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: url-snarf no network interface was supplied, aborting ...
+Initiating NSE at 19:18
+NSE: mtrace: A source IP must be provided through fromip argument.
+Completed NSE at 19:19, 40.03s elapsed
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     192.168.1.4
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+| broadcast-dns-service-discovery: 
+|   192.168.1.4
+|     22/tcp ssh
+|       model=MacBookPro8,1
+|       Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+|     22/tcp sftp-ssh
+|       model=MacBookPro8,1
+|       Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+|     548/tcp afpovertcp
+|       model=MacBookPro8,1
+|       Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+|     631/tcp ipp
+|       txtvers=1
+|       qtotal=1
+|       rp=printers/Canon_MG6100_series
+|       ty=Canon MG6100 series
+|       adminurl=https://nishimura-no-MacBook-Pro.local.:631/printers/Canon_MG6100_series
+|       note=\xE8\xA5\xBF\xE6\x9D\x91 \xE3\x81\xAE MacBook Pro
+|       priority=0
+|       product=(Canon MG6100 series)
+|       pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster
+|       UUID=acf1f401-3a8f-3224-5204-6fb748f5fd7c
+|       TLS=1.2
+|       Color=T
+|       Scan=T
+|       printer-state=3
+|       printer-type=0x480900E
+|       Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+|     631/tcp ipps
+|       txtvers=1
+|       qtotal=1
+|       rp=printers/Canon_MG6100_series
+|       ty=Canon MG6100 series
+|       adminurl=https://nishimura-no-MacBook-Pro.local.:631/printers/Canon_MG6100_series
+|       note=\xE8\xA5\xBF\xE6\x9D\x91 \xE3\x81\xAE MacBook Pro
+|       priority=0
+|       product=(Canon MG6100 series)
+|       pdl=application/octet-stream,application/pdf,application/postscript,image/jpeg,image/png,image/pwg-raster
+|       UUID=acf1f401-3a8f-3224-5204-6fb748f5fd7c
+|       TLS=1.2
+|       Color=T
+|       Scan=T
+|       printer-state=3
+|       printer-type=0x480900E
+|       Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+|     3031/tcp eppc
+|       model=MacBookPro8,1
+|       Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+|     5000/tcp MonoTouch
+|       model=MacBookPro8,1
+|       Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+|     5900/tcp rfb
+|       model=MacBookPro8,1
+|       Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+|     49152/tcp odisk
+|       sys=waMA=40:6C:8F:04:A4:6C,adVF=0x200,adDT=0x3,adCC=1
+|       model=MacBookPro8,1
+|_      Address=192.168.1.4 fe80:0:0:0:1240:f3ff:fe95:4f5e
+| broadcast-eigrp-discovery: 
+|_ ERROR: Couldn't get an A.S value.
+| broadcast-listener: 
+|   udp
+|       DHCP
+|         srv ip       cli ip       mask           gw           dns
+|         192.168.1.1  192.168.1.8  255.255.255.0  192.168.1.1  192.168.1.1
+|       DropBox
+|         displayname  ip           port   version  host_int   namespaces
+|         536549527    192.168.1.4  17500  1.8      536549527  179064612
+|   ether
+|       OSPF Hello
+|_        
+| broadcast-netbios-master-browser: 
+| ip             server        domain
+|_192.168.1.103  NISHIMURA-PC  WORKGROUP
+| broadcast-ping: 
+|   IP: 192.168.1.4  MAC: 10:40:f3:95:4f:5e
+|_  Use --script-args=newtargets to add the results as targets
+| broadcast-upnp-info: 
+|   192.168.1.1
+|       Server: POSIX, UPnP/1.0, Intel MicroStack/1.0.2126
+|       Location: http://192.168.1.1:51234/wps_device.xml
+|         Webserver: Unspecified, UPnP/1.0, Unspecified
+|         Name: WPS Access Point
+|         Manufacturer: NTTEAST/NTTWEST
+|         Model Name: PR-400KI
+|_        Model Version: 00:25:36:50:BC:09
+| broadcast-wpad-discover: 
+|_  ERROR: Could not find WPAD using DNS/DHCP
+|_eap-info: please specify an interface with -e
+| http-icloud-findmyiphone: 
+|_  ERROR: No username or password was supplied
+| http-icloud-sendmsg: 
+|_  ERROR: No username or password was supplied
+| http-virustotal: 
+|_  ERROR: An API key is required in order to use this script (see description)
+| lltd-discovery: 
+|   192.168.1.18
+|     Hostname: nishimura
+|     Mac: 08:60:6e:4c:04:61 (Unknown)
+|     IPv6: 2001:a450:2122:ca00:9dfb:8cd6:a8a0:74a6
+|   192.168.1.1
+|     Hostname: PR-400KI
+|     Mac: 00:01:02:03:04:05 (3com)
+|_  Use the newtargets script-arg to add the results as targets
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+| targets-ipv6-multicast-echo: 
+|   IP: 2001:a450:2122:ca00:1240:f3ff:fe95:4f5e  MAC: 10:40:f3:95:4f:5e  IFACE: eth1
+|   IP: fe80::1240:f3ff:fe95:4f5e                MAC: 10:40:f3:95:4f:5e  IFACE: eth1
+|   IP: fe80::225:36ff:fe50:bc89                 MAC: 00:25:36:50:bc:89  IFACE: eth1
+|   IP: 2001:a450:2122:ca00:225:36ff:fe50:bc89   MAC: 00:25:36:50:bc:89  IFACE: eth1
+|_  Use --script-args=newtargets to add the results as targets
+| targets-ipv6-multicast-invalid-dst: 
+|   IP: fe80::1240:f3ff:fe95:4f5e                MAC: 10:40:f3:95:4f:5e  IFACE: eth1
+|   IP: 2001:a450:2122:ca00:1240:f3ff:fe95:4f5e  MAC: 10:40:f3:95:4f:5e  IFACE: eth1
+|   IP: fe80::225:36ff:fe50:bc89                 MAC: 00:25:36:50:bc:89  IFACE: eth1
+|   IP: 2001:a450:2122:ca00:225:36ff:fe50:bc89   MAC: 00:25:36:50:bc:89  IFACE: eth1
+|_  Use --script-args=newtargets to add the results as targets
+Initiating ARP Ping Scan at 19:19
+Scanning 2 hosts [1 port/host]
+Completed ARP Ping Scan at 19:19, 0.00s elapsed (2 total hosts)
+Initiating Parallel DNS resolution of 2 hosts. at 19:19
+Completed Parallel DNS resolution of 2 hosts. at 19:19, 0.04s elapsed
+Initiating SYN Stealth Scan at 19:19
+Scanning 2 hosts [1000 ports/host]
+Discovered open port 22/tcp on 192.168.1.4
+Discovered open port 5900/tcp on 192.168.1.4
+Discovered open port 5000/tcp on 192.168.1.4
+Discovered open port 88/tcp on 192.168.1.4
+Discovered open port 3031/tcp on 192.168.1.4
+Increasing send delay for 192.168.1.4 from 0 to 5 due to 217 out of 722 dropped probes since last increase.
+Discovered open port 548/tcp on 192.168.1.4
+Discovered open port 49152/tcp on 192.168.1.4
+Discovered open port 631/tcp on 192.168.1.4
+Completed SYN Stealth Scan against 192.168.1.4 in 24.76s (1 host left)
+Completed SYN Stealth Scan at 19:20, 26.01s elapsed (2000 total ports)
+NSE: Script scanning 2 hosts.
+Initiating NSE at 19:20
+NSE Timing: About 7.70% done; ETC: 19:26 (0:06:12 remaining)
+NSE Timing: About 7.78% done; ETC: 19:33 (0:12:03 remaining)
+NSE Timing: About 7.87% done; ETC: 19:39 (0:17:45 remaining)
+NSE Timing: About 7.87% done; ETC: 19:45 (0:23:36 remaining)
+NSE Timing: About 7.87% done; ETC: 19:52 (0:29:28 remaining)
+NSE Timing: About 7.87% done; ETC: 19:58 (0:35:19 remaining)
+NSE Timing: About 8.58% done; ETC: 20:01 (0:37:28 remaining)
+NSE Timing: About 8.67% done; ETC: 20:06 (0:42:20 remaining)
+NSE Timing: About 8.67% done; ETC: 20:12 (0:47:36 remaining)
+NSE Timing: About 8.84% done; ETC: 20:16 (0:51:46 remaining)
+NSE Timing: About 9.64% done; ETC: 20:21 (0:55:01 remaining)
+NSE Timing: About 9.72% done; ETC: 20:25 (0:59:08 remaining)
+NSE Timing: About 10.41% done; ETC: 20:29 (1:02:32 remaining)
+NSE Timing: About 10.41% done; ETC: 20:34 (1:06:50 remaining)
+NSE Timing: About 10.41% done; ETC: 20:39 (1:11:08 remaining)
+NSE Timing: About 11.18% done; ETC: 20:44 (1:15:14 remaining)
+NSE Timing: About 12.01% done; ETC: 20:50 (1:19:35 remaining)
+NSE Timing: About 12.01% done; ETC: 20:56 (1:24:21 remaining)
+NSE Timing: About 12.76% done; ETC: 21:02 (1:29:22 remaining)
+NSE Timing: About 13.48% done; ETC: 21:09 (1:34:47 remaining)
+NSE Timing: About 14.20% done; ETC: 21:17 (1:40:22 remaining)
+NSE Timing: About 15.62% done; ETC: 21:26 (1:46:28 remaining)
+NSE Timing: About 17.96% done; ETC: 21:37 (1:52:54 remaining)
+NSE Timing: About 19.95% done; ETC: 21:49 (1:59:49 remaining)
+NSE Timing: About 30.80% done; ETC: 20:58 (1:08:14 remaining)
+NSE Timing: About 37.84% done; ETC: 20:41 (0:50:43 remaining)
+NSE Timing: About 41.83% done; ETC: 20:35 (0:43:38 remaining)
+NSE Timing: About 46.35% done; ETC: 20:34 (0:39:50 remaining)
+NSE Timing: About 49.96% done; ETC: 20:31 (0:35:52 remaining)
+NSE Timing: About 58.71% done; ETC: 20:21 (0:25:32 remaining)
+NSE Timing: About 64.54% done; ETC: 20:22 (0:22:12 remaining)
+NSE Timing: About 71.99% done; ETC: 20:16 (0:15:55 remaining)
+NSE Timing: About 76.90% done; ETC: 20:16 (0:12:57 remaining)
+NSE Timing: About 82.43% done; ETC: 20:15 (0:09:47 remaining)
+NSE Timing: About 90.47% done; ETC: 20:11 (0:04:53 remaining)
+NSE Timing: About 92.38% done; ETC: 11:10 (3:02:13 remaining)
+NSE Timing: About 99.39% done; ETC: 08:24 (0:13:30 remaining)
+Completed NSE at 08:11, 132684.05s elapsed
+Initiating NSE at 08:11
+Completed NSE at 08:11, 0.41s elapsed
+Nmap scan report for 192.168.1.4
+Host is up (0.00018s latency).
+Not shown: 992 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+|_banner: SSH-2.0-OpenSSH_5.9
+| ssh-hostkey: 1024 cc:28:a8:8a:3a:e0:2c:5b:87:d1:db:a2:7d:ad:cc:3b (DSA)
+|_2048 f6:7d:65:49:75:33:90:20:24:4b:67:e3:d6:5d:23:61 (RSA)
+| ssh2-enum-algos: 
+|   kex_algorithms (4)
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms (2)
+|       ssh-rsa
+|       ssh-dss
+|   encryption_algorithms (13)
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       arcfour256
+|       arcfour128
+|       aes128-cbc
+|       3des-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|       aes192-cbc
+|       aes256-cbc
+|       arcfour
+|       rijndael-cbc@lysator.liu.se
+|   mac_algorithms (11)
+|       hmac-md5
+|       hmac-sha1
+|       umac-64@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-256-96
+|       hmac-sha2-512
+|       hmac-sha2-512-96
+|       hmac-ripemd160
+|       hmac-ripemd160@openssh.com
+|       hmac-sha1-96
+|       hmac-md5-96
+|   compression_algorithms (2)
+|       none
+|_      zlib@openssh.com
+88/tcp    open  kerberos-sec
+|_krb5-enum-users: ERROR: No Kerberos REALM was supplied, aborting ...
+548/tcp   open  afp
+| afp-ls: 
+|   \xE8\xA5\xBF\xE6\x9D\x91 \xE7\xA4\xBC\xE6\x81\xA9 \xE3\x81\xAE\xE3\x83\x91\xE3\x83\x96\xE3\x83\xAA\xE3\x83\x83\xE3\x82\xAF\xE3\x83\x95\xE3\x82\xA9\xE3\x83\xAB\xE3\x83\x80
+|     PERMISSION  UID  GID  SIZE  TIME              FILENAME
+|     -rw-r--r--  501  20   6148  2012-09-03 17:55  .DS_Store
+|     -rw-r--r--  501  20   0     2009-07-23 13:00  .localized
+|     drwx-wx-wx  501  20   0     2011-11-18 16:15  Drop Box
+|   
+|   Information retrieved as: nil
+|_  Output restricted to 10 entries per volume. (See afp-ls.maxfiles)
+| afp-serverinfo: 
+|   | Server Flags: 0x9ffb
+|   |   Super Client: Yes
+|   |   UUIDs: Yes
+|   |   UTF8 Server Name: Yes
+|   |   Open Directory: Yes
+|   |   Reconnect: Yes
+|   |   Server Notifications: Yes
+|   |   TCP/IP: Yes
+|   |   Server Signature: Yes
+|   |   ServerMessages: Yes
+|   |   Password Saving Prohibited: No
+|   |   Password Changing: Yes
+|   |_  Copy File: Yes
+|   Server Name: nishimura-no-MacBook-Pro.local
+|   Machine Type: MacBookPro8,1
+|   AFP Versions: AFP3.4, AFP3.3, AFP3.2, AFP3.1, AFPX03
+|   UAMs: DHCAST128, DHX2, Recon1, Client Krb v2, GSS, No User Authent
+|   Server Signature: 060607ff0fa4506ba6c1c6ea3f0163cd
+|   Network Address 1: 192.168.1.4:548
+|   Network Address 2: 172.16.1.1:548
+|   Network Address 3: 172.16.247.1:548
+|   Network Address 4: [fe80:0000:0000:0000:1240:f3ff:fe95:4f5e]:548
+|   Network Address 5: [2001:a450:2122:ca00:1240:f3ff:fe95:4f5e]:548
+|   Network Address 6: [2001:a450:2122:ca00:d0a6:9c54:30d9:ae19]:548
+|   Network Address 7: [fe80:0000:0000:0000:edb6:94e6:4511:e65d]:548
+|   Network Address 8: [fd14:1248:a29a:4cbd:edb6:94e6:4511:e65d]:548
+|   Network Address 9: 192.168.1.4
+|   Directory Name 1: host/nishimura-no-macbook-pro.local@LOCAL
+|_  UTF8 Server Name: nishimura-no-MacBook-Pro.local
+| afp-showmount: 
+|   \xE8\xA5\xBF\xE6\x9D\x91 \xE7\xA4\xBC\xE6\x81\xA9 \xE3\x81\xAE\xE3\x83\x91\xE3\x83\x96\xE3\x83\xAA\xE3\x83\x83\xE3\x82\xAF\xE3\x83\x95\xE3\x82\xA9\xE3\x83\xAB\xE3\x83\x80
+|     Owner: Search,Read,Write
+|     Group: Search,Read
+|     Everyone: Search,Read
+|_    User: Search,Read
+631/tcp   open  ipp
+| cups-info: 
+|   Canon_MG6100_series
+|     DNS-SD Name: Canon MG6100 series @ \xE8\xA5\xBF\xE6\x9D\x91 \xE3\x81\xAE MacBook Pro
+|     Location: \xE8\xA5\xBF\xE6\x9D\x91 \xE3\x81\xAE MacBook Pro
+|     Model: Canon MG6100 series
+|     State: 
+|_    Queue: 0 print jobs
+|_http-cakephp-version: false
+|_http-chrono: Request times for /; avg: 444787.59ms; min: 16044.05ms; max: 2159681.74ms
+|_http-config-backup: ERROR: Script execution failed (use -d to debug)
+|_http-date: Tue, 02 Jul 2013 16:25:28 GMT; +17h05m20s from local time.
+|_http-default-accounts: false
+|_http-favicon: Unknown favicon MD5: 25DBB6B3FE93B0692EEB4F9DCE4FB1BA
+|_http-frontpage-login: false
+|_http-git: 0
+|_http-google-malware: [ERROR] No API key found. Update the variable APIKEY in http-google-malware or set it in the argument http-google-malware.api
+| http-grep: 
+|_  ERROR: Argument http-grep.match was not set
+| http-headers: 
+|   Date: Tue, 02 Jul 2013 16:25:27 GMT
+|   Server: CUPS/1.6 IPP/2.1
+|   Content-Language: ja
+|   Content-Type: HEAD / HTTP/1.1
+|   
+|_  (Request type: HEAD)
+|_http-huawei-hg5xx-vuln: false
+|_http-iis-webdav-vuln: ERROR: This web server is not supported.
+| http-litespeed-sourcecode-download: 
+| Litespeed Web Server Source Code Disclosure (CVE-2010-2333)
+| /index.php source code:
+| <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+| <HTML>
+| <HEAD>
+| 	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+| 	<TITLE>Web \xE3\x82\xA4\xE3\x83\xB3\xE3\x82\xBF\xE3\x83\xBC\xE3\x83\x95\xE3\x82\xA7\xE3\x82\xA4\xE3\x82\xB9\xE3\x81\x8C\xE7\x84\xA1\xE5\x8A\xB9\xE3\x81\xAB\xE3\x81\xAA\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\x84\xE3\x81\xBE\xE3\x81\x99 - CUPS v1.6.2</TITLE>
+| 	<LINK REL="STYLESHEET" TYPE="text/css" HREF="/cups.css">
+| </HEAD>
+| <BODY>
+| <H1>Web \xE3\x82\xA4\xE3\x83\xB3\xE3\x82\xBF\xE3\x83\xBC\xE3\x83\x95\xE3\x82\xA7\xE3\x82\xA4\xE3\x82\xB9\xE3\x81\x8C\xE7\x84\xA1\xE5\x8A\xB9\xE3\x81\xAB\xE3\x81\xAA\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\x84\xE3\x81\xBE\xE3\x81\x99</H1>
+| <P>Web \xE3\x82\xA4\xE3\x83\xB3\xE3\x82\xBF\xE3\x83\xBC\xE3\x83\x95\xE3\x82\xA7\xE3\x82\xA4\xE3\x82\xB9\xE3\x81\xAF\xE7\x8F\xBE\xE5\x9C\xA8\xE7\x84\xA1\xE5\x8A\xB9\xE3\x81\xAB\xE3\x81\xAA\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\x84\xE3\x81\xBE\xE3\x81\x99\xE3\x80\x82\xE6\x9C\x89\xE5\x8A\xB9\xE3\x81\xAB\xE3\x81\x99\xE3\x82\x8B\xE3\x81\xAB\xE3\x81\xAF\xE3\x80\x81"cupsctl WebInterface=yes" \xE3\x82\x92\xE5\xAE\x9F\xE8\xA1\x8C\xE3\x81\x97\xE3\x81\xA6\xE3\x81\x8F\xE3\x81\xA0\xE3\x81\x95\xE3\x81\x84\xE3\x80\x82</P>
+| </BODY>
+|_</HTML>
+|_http-malware-host: false
+| http-methods: GET HEAD OPTIONS POST PUT
+| Potentially risky methods: PUT
+|_See http://nmap.org/nsedoc/scripts/http-methods.html
+|_http-slowloris: false
+|_http-title: Web \xE3\x82\xA4\xE3\x83\xB3\xE3\x82\xBF\xE3\x83\xBC\xE3\x83\x95\xE3\x82\xA7\xE3\x82\xA4\xE3\x82\xB9\xE3\x81\x8C\xE7\x84\xA1\xE5\x8A\xB9\xE3\x81\xAB\xE3\x81\xAA\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\x84\xE3\x81\xBE\xE3\x81\x99 - C...
+| http-vhosts: 
+| wiki : 400
+| beta : 400
+| home : 400
+| info : 400
+| intranet : 400
+| intra : 400
+| www2 : 400
+| s3 : 400
+| backup : 400
+|_19 names had status ERROR
+|_http-vuln-cve2010-0738: false
+| http-vuln-cve2011-3368: 
+|_  ERROR: Got no answers from pipelined queries
+| http-waf-detect: IDS/IPS/WAF detected:
+|_192.168.1.4:631/?p4yl04d=../../../../../../../../../../../../../../../../../etc/passwd
+3031/tcp  open  eppc
+|_eppc-enum-processes: ERROR: Script execution failed (use -d to debug)
+5000/tcp  open  upnp
+5900/tcp  open  vnc
+|_banner: RFB 003.889
+| vnc-info: 
+|   Protocol version: 3.889
+|   Security types:
+|     Mac OS X security type (30)
+|_    Mac OS X security type (35)
+49152/tcp open  unknown
+MAC Address: 10:40:F3:95:4F:5E (Apple)
+
+Host script results:
+| dns-blacklist: 
+|   PROXY
+|     tor.dan.me.uk - FAIL
+|     misc.dnsbl.sorbs.net - FAIL
+|     socks.dnsbl.sorbs.net - FAIL
+|     dnsbl.tornevall.org - FAIL
+|_    http.dnsbl.sorbs.net - FAIL
+|_dns-brute: Can't guess domain of "192.168.1.4"; use dns-brute.domain script argument.
+|_firewall-bypass: false
+|_ipidseq: Randomized
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT   FAMILY  MEAN (us)  STDDEV   LOSS (%)
+| 1      0       251.80     84.69    0.0%
+| 22     0       914.30     1530.13  0.0%
+| 88     1       468.40     173.96   0.0%
+| 548    1       595.70     583.63   0.0%
+| 631    1       592.50     150.48   0.0%
+| 3031   1       840.30     1065.14  0.0%
+| 5000   1       518.10     149.57   0.0%
+| 5900   1       822.40     793.91   0.0%
+|_49152  1       480.90     130.92   0.0%
+|_sniffer-detect: Likely in promiscuous mode (tests: "11111111")
+| unusual-port: 
+|_  WARNING: this script depends on Nmap's service/version detection (-sV)
+
+Nmap scan report for 192.168.1.9
+Host is up (0.00048s latency).
+All 1000 scanned ports on 192.168.1.9 are filtered
+MAC Address: 00:0C:29:DD:36:69 (VMware)
+
+Host script results:
+| dns-blacklist: 
+|   SPAM
+|_    dnsbl.ahbl.org - FAIL
+|_dns-brute: Can't guess domain of "192.168.1.9"; use dns-brute.domain script argument.
+|_firewall-bypass: false
+|_sniffer-detect: Unknown (tests: "____1_1_")
+| unusual-port: 
+|_  WARNING: this script depends on Nmap's service/version detection (-sV)
+
+NSE: Script Post-scanning.
+Initiating NSE at 08:11
+Completed NSE at 08:11, 0.00s elapsed
+Initiating NSE at 08:11
+Completed NSE at 08:11, 0.00s elapsed
+Post-scan script results:
+| reverse-index: 
+|   22/tcp: 192.168.1.4
+|   88/tcp: 192.168.1.4
+|   548/tcp: 192.168.1.4
+|   631/tcp: 192.168.1.4
+|   3031/tcp: 192.168.1.4
+|   5000/tcp: 192.168.1.4
+|   5900/tcp: 192.168.1.4
+|_  49152/tcp: 192.168.1.4
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 2 IP addresses (2 hosts up) scanned in 132753.78 seconds
+           Raw packets sent: 3812 (169.152KB) | Rcvd: 1003 (40.128KB)
